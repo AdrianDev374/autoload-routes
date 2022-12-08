@@ -28,7 +28,7 @@ class ServiceProvider extends LaravelServiceProvider
     {
         $this->publishes([
             __DIR__ . '../../config/autoload-routes.php' => config_path('autoload-routes.php'),
-        ]);
+        ], 'autoload-routes');
     }
 
     private function loadRoutes(): void
