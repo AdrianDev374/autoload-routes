@@ -1,15 +1,19 @@
 {
     "name": "adriandev374/autoload-routes",
     "version": "0.0.1",
-    "description": "TODO",
-    "license": "TODO",
+    "description": "Automatic loading of route files in Laravel for multiple groups of middlewares",
+    "license": "MIT",
     "type": "library",
     "authors": [
         {
             "name": "AdrianDev374",
-            "email": "adriandev374@outlook.com"
+            "email": "adriandev374@outlook.com",
+            "role": "Developer"
         }
     ],
+    "require": {
+        "symfony/finder": "^6.0"
+    },
     "autoload": {
         "psr-4": {
             "Adriandev374\\AutoloadRoutes\\": "src/"
@@ -18,10 +22,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Adriandev374\\AutoloadRoutes\\Providers\\ServiceProvider"
+                "Adriandev374\\AutoloadRoutes\\ServiceProvider"
             ]
         }
     },
-    "require": {},
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
