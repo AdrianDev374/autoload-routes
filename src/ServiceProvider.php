@@ -33,7 +33,12 @@ class ServiceProvider extends LaravelServiceProvider
 
     private function loadRoutes(): void
     {
-        $depth = config('autoload-routes.depth');
+        $depth = (int)config('autoload-routes.depth');
+        $depthPattern = '== 0';
+        if ($depth > 0) {
+            $depthPattern = '< ' . $depth;
+        }
+
         $paths = config('autoload-routes.paths');
         $groupsMiddlewares = array_keys($paths);
 
@@ -46,7 +51,7 @@ class ServiceProvider extends LaravelServiceProvider
 
             $finder = Finder::create()
                 ->files()->name('*.php')
-                ->depth('< ' . $depth)
+                ->depth($depthPattern)
                 ->in($groupPaths);
 
             foreach ($finder->getIterator() as $file) {
