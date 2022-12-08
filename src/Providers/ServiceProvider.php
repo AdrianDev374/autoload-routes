@@ -6,7 +6,7 @@ namespace Adriandev374\AutoloadRoutes\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
-class AutoloadRoutesServiceProvider extends ServiceProvider
+class ServiceProvider extends ServiceProvider
 {
     public function register(): void
     {
