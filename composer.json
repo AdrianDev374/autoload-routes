@@ -1,0 +1,19 @@
+{
+    "name": "adriandev374/autoload-routes",
+    "description": "TODO",
+    "license": "TODO",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Adriandev374\\AutoloadRoutes\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "AdrianDev374",
+            "email": "adriandev374@outlook.com"
+        }
+    ],
+    "require": {},
+    "minimum-stability": "dev"
+}
