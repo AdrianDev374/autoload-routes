@@ -1,6 +1,5 @@
 {
     "name": "adriandev374/autoload-routes",
-    "version": "0.0.1",
     "description": "Automatic loading of route files in Laravel for multiple groups of middlewares",
     "license": "MIT",
     "type": "library",
