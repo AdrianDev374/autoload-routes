@@ -16,6 +16,9 @@ The first thing is to install the package from the composer dependency manager
 Route files loaded by default. All files found within these directories will be automatically
 loaded into their respective middleware groups.
 
+IMPORTANT, the lines are commented since the directories do not exist. 
+You must publish the configuration file and modify it according to your needs
+
 | Group Middleware WEB | Group Middleware API |
 |----------------------|----------------------|
 | src/autoload/web     | src/autoload/api     |
