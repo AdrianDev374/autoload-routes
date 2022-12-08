@@ -1,19 +1,27 @@
 {
     "name": "adriandev374/autoload-routes",
+    "version": "0.0.1",
     "description": "TODO",
     "license": "TODO",
     "type": "library",
-    "autoload": {
-        "psr-4": {
-            "Adriandev374\\AutoloadRoutes\\": "src/"
-        }
-    },
     "authors": [
         {
             "name": "AdrianDev374",
             "email": "adriandev374@outlook.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Adriandev374\\AutoloadRoutes\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Adriandev374\\AutoloadRoutes\\Providers"
+            ]
+        }
+    },
     "require": {},
     "minimum-stability": "dev"
 }
