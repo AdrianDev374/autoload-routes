@@ -18,7 +18,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Adriandev374\\AutoloadRoutes\\Providers\\ServiceProviders"
+                "Adriandev374\\AutoloadRoutes\\Providers\\ServiceProvider"
             ]
         }
     },

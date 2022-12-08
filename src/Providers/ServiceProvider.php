@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Adriandev374\AutoloadRoutes\Providers;
 
-use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
 
-class ServiceProvider extends ServiceProvider
+final class ServiceProvider extends LaravelServiceProvider
 {
     public function register(): void
     {
@@ -15,6 +15,6 @@ class ServiceProvider extends ServiceProvider
 
     public function boot(): void
     {
-
+        //
     }
 }
