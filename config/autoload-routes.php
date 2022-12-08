@@ -17,10 +17,10 @@ return [
 
     'paths' => [
         'web' => [
-            base_path('src/autoload/web')
+            // base_path('src/autoload/web')
         ],
         'api' => [
-            base_path('src/autoload/api'),
+            // base_path('src/autoload/api'),
         ],
     ],
 
